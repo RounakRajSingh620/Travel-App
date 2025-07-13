@@ -9,7 +9,7 @@ export default function Home({ onArrowClick, onlyText }) {
 
   return (
     <div className="relative w-full h-screen">
-      {/* Background Image */}
+    
       <img
         src="/eiffel.jpg"
         alt="Eiffel Tower"
@@ -17,7 +17,7 @@ export default function Home({ onArrowClick, onlyText }) {
       />
       <div className="absolute inset-0 bg-black/40 z-10" />
 
-      {/* Always Visible: Arrow and Heart Buttons */}
+      
       <button
         onClick={onArrowClick}
         className="absolute top-5 left-5 z-20 text-white text-2xl hover:scale-110 transition-transform duration-200"
@@ -34,7 +34,7 @@ export default function Home({ onArrowClick, onlyText }) {
         {liked ? "❤️" : "🤍"}
       </button>
 
-      {/* Eiffel Tower Text (centered if onlyText, else bottom-left) */}
+      
       <div
         className={`absolute z-30 text-white ${
           onlyText
@@ -42,7 +42,7 @@ export default function Home({ onArrowClick, onlyText }) {
             : "bottom-52 left-5 text-left"
         }`}
       >
-        {/* Show ON SALE badge only if not onlyText */}
+        
         {!onlyText && (
           <span className="bg-green-600 text-xs px-2 py-1 rounded-full">
             ON SALE

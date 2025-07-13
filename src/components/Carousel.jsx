@@ -1,4 +1,4 @@
-// src/components/Carousel.jsx
+
 import { useState } from "react";
 
 const thumbs = ["/thumb1.jpg", "/thumb2.jpg", "/eiffel.jpg", "/thumb3.jpg"];
